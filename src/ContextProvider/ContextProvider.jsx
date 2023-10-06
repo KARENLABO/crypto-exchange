@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { createContext } from "react";
 
 import { bringListCoins } from "../Api/Api";
+import { Loader } from "../Components";
 import categorizeObjects from "./helper";
 
 export const DataContext = createContext();
@@ -27,7 +28,7 @@ export const DataProvider = ({ children }) => {
   }, []);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loader />;
   }
 
   return (
