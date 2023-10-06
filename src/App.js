@@ -1,9 +1,11 @@
-import { Home } from "./Components";
+import Home from "./Pages";
+import { DataProvider } from "./ContextProvider/ContextProvider";
+
 function App() {
   return (
-    <div className="App">
+    <DataProvider>
       <Home />
-    </div>
+    </DataProvider>
   );
 }
 
