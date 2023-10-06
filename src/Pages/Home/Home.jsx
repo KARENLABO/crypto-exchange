@@ -7,6 +7,7 @@ import Content from "./Components/Content";
 import "./styles.scss";
 
 function Home() {
+  // Accessing data from the DataContext using useContext
   const { ListCoinsData } = useContext(DataContext);
 
   return (
