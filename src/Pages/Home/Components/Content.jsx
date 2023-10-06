@@ -28,6 +28,7 @@ function Content() {
   useEffect(() => {
     setError(null);
 
+    // Fetch exchange rate data when selectedCrypto, selectedLocal, or refresh change
     if ((selectedCrypto, selectedLocal) || refresh) {
       const fetchData = async () => {
         setIsLoading(true);
@@ -49,6 +50,7 @@ function Content() {
     setRefresh(false);
   }, [selectedCrypto, selectedLocal, refresh]);
 
+  // Function to handle changes when selecting cryptocurrencies or local currencies
   const handleChange = async (item, isCrypto) => {
     if (isCrypto) {
       setSelectedCrypto(item);
@@ -57,6 +59,7 @@ function Content() {
     }
   };
 
+  // Tour steps for user guidance
   const steps = [
     {
       title: "Crypto Currencies",

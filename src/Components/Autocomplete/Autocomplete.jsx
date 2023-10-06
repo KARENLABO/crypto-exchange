@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { AutoComplete } from "antd";
 
+// Function to render the title of the autocomplete options
 const renderTitle = (title) => <span>{title}</span>;
+
+// Function to render each item in the autocomplete dropdown
 const renderItem = (items) => {
   return items?.map((item) => {
     const { name, asset_id } = item;
@@ -21,6 +24,7 @@ const renderItem = (items) => {
   });
 };
 
+// Function to map the options for the autocomplete
 const mapOptions = (list, isCrypto) => {
   return [
     {
@@ -30,7 +34,7 @@ const mapOptions = (list, isCrypto) => {
   ];
 };
 
-// Function to filter search results
+// Function to filter search results based on user input
 const handleSearch = (query, options) => {
   if (!query) {
     return;
@@ -44,7 +48,8 @@ const handleSearch = (query, options) => {
   return mapOptions(filteredResults);
 };
 
-function SelectUI({ list, onChange, isCrypto, error, isLoading }) {
+// Main component for selecting currencies
+function SelectUI({ list, onChange, isCrypto }) {
   const [options, setOptions] = useState(mapOptions(list, isCrypto));
 
   return (
