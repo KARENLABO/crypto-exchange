@@ -17,7 +17,8 @@ function Home() {
           <img src={titleImage} alt="titleImage" />
           <div className="main-content">
             <h2 className="principal-title">
-              Select the currency that you want to see the exchange
+              Choose the currency you're eager to explore and discover its
+              exchange rate.
             </h2>
             <Content />
           </div>
