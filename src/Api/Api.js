@@ -1,6 +1,7 @@
 import axios from "axios";
 const API_KEY = process.env.REACT_APP_COIN_API_KEY;
 
+// bring the initial data of the coins to the application
 export const bringListCoins = async () => {
   try {
     const coinsData = await axios({
@@ -17,6 +18,7 @@ export const bringListCoins = async () => {
   }
 };
 
+// check the currency exchange
 export const getExchangeRate = async (crypto, local, setError) => {
   try {
     const coinsRate = await axios({
