@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Delius+Unicase:wght@400;700&family=Poppins:wght@200&display=swap');
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  auto ;
+    gap: 1rem;
+    justify-items: center;
+    font-family: 'Delius Unicase', cursive;
+
+    .start-tour{
+        width: 200px;
+        grid-column: 1/3;
+    }
+
+    .error-message{
+        max-width: 45%;
+        text-align: center;
+        color: red;    
+        font-family: 'Poppins', sans-serif;
+        grid-column: 1/3;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+
+    .autoComplete{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .2rem;
+
+        label{
+            margin-left: .5rem;
+            font-size: 17px;
+            font-weight: bolder;
+            color:#1677ff ;
+        }
+    }
+
+    .input-number{
+        width: 100%;
+        max-width: 50%;
+        height: 70px;
+        font-size: 20px;
+        font-family: 'Delius', cursive;
+        margin-bottom: 1rem;
+    
+        
+    }
+
+    .ant-input-number-input{
+        text-align: center!important;
+    }
+
+
+
+    .text-convertion{
+        font-family: 'Poppins', sans-serif;
+        grid-column: 1/3;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .button-refresh{
+        grid-column: 1/3;
+        width: 18%;
+        justify-self: center;
+        font-family: 'Delius Unicase', cursive;
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .autoComplete{
+            margin-top: 1rem;
+            gap: .5rem;
+            label{
+                font-size: 13px;
+                
+            }
+        }
+
+        .button-refresh{
+            width: 50%;
+        }
+    }
+    
+    
+}
