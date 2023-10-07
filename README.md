@@ -13,7 +13,7 @@ This small web application allows users to check real-time exchange rates betwee
 
 Follow these steps to quickly set up and run the Crypto Exchange Rate App:
 
-1. Clone this repository to your local machine using `git clone`.
+1. Clone this repository to your local machine using `git clone https://github.com/KARENLABO/crypto-exchange.git`.
 2. Install the necessary dependencies with `npm install`.
 3. Start the development server with `npm start`.
 4. Open your web browser and navigate to `http://localhost:3000`.
