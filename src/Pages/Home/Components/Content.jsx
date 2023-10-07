@@ -93,7 +93,6 @@ function Content() {
       <Button
         className="start-tour"
         type="primary"
-        shape="round"
         icon={<BulbOutlined />}
         onClick={() => setOpen(true)}
       >
@@ -131,7 +130,8 @@ function Content() {
         min={1}
         max={100}
         defaultValue={1}
-        onChange={(unit) => setUnit(unit)}
+        value={unit}
+        onChange={(qty) => setUnit(qty >= 1 ? qty : 1)}
         disabled={error}
       />
       <InputNumber
@@ -145,7 +145,7 @@ function Content() {
           return `$ ${formattedValue}`;
         }}
         disabled={error}
-        value={value ? unit * value : ""}
+        value={!error && value ? unit * value : "0"}
         readOnly
       />
 
