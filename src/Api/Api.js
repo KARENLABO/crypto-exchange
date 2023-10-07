@@ -14,7 +14,7 @@ export const bringListCoins = async () => {
 
     return coinsData.data;
   } catch (e) {
-    console.log(e);
+    console.error(e);
   }
 };
 
