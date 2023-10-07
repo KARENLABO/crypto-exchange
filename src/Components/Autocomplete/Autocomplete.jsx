@@ -26,6 +26,13 @@ const renderItem = (items) => {
 
 // Function to map the options for the autocomplete
 const mapOptions = (list, isCrypto) => {
+  if (list.length < 1) {
+    return [
+      {
+        label: "No results found",
+      },
+    ];
+  }
   return [
     {
       label: renderTitle(isCrypto ? "Crypto Currencies" : "Local Currencies"),
@@ -45,6 +52,7 @@ const handleSearch = (query, options) => {
       item.name.toLowerCase().includes(query.toLowerCase())
     );
   });
+
   return mapOptions(filteredResults);
 };
 
@@ -54,11 +62,12 @@ function SelectUI({ list, onChange, isCrypto }) {
 
   return (
     <AutoComplete
-      popupMatchSelectWidth={250}
-      style={{ width: "280px" }}
+      popupMatchSelectWidth={250} //in the documentation of ant design is recommended to make the styles here
+      style={{ width: "280px" }} //in the documentation of ant design is recommended to make the styles here
       options={options}
       onSelect={(item) => onChange(item, isCrypto)}
       onSearch={(query) => setOptions(handleSearch(query, list))}
+      notFoundContent={true}
       placeholder={
         isCrypto ? "Select a crypto currency" : "Select a local currency"
       }
