@@ -15,8 +15,9 @@ Follow these steps to quickly set up and run the Crypto Exchange Rate App:
 
 1. Clone this repository to your local machine using `git clone https://github.com/KARENLABO/crypto-exchange.git`.
 2. Install the necessary dependencies with `npm install`.
-3. Start the development server with `npm start`.
-4. Open your web browser and navigate to `http://localhost:3000`.
+3. In the root directory of the application, create a file named .env.local. Within this file, add the following variable: REACT_APP_COIN_API_KEY="YOUR PRIVATE KEY". Be sure to replace "YOUR PRIVATE KEY" with the unique API key you obtained from https://docs.coinapi.io/.
+4. Start the development server with `npm start`.
+5. Open your web browser and navigate to `http://localhost:3000`.
 
 ## Requirements
 
