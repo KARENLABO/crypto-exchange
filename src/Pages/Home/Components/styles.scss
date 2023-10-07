@@ -13,7 +13,7 @@
     }
 
     .error-message{
-        max-width: 45%;
+        max-width: 60%;
         text-align: center;
         color: red;    
         font-family: 'Poppins', sans-serif;
@@ -29,10 +29,9 @@
         gap: .2rem;
 
         label{
-            margin-left: .5rem;
+            margin-left: .3rem;
             font-size: 17px;
             font-weight: bolder;
-            color:#1677ff ;
         }
     }
 
@@ -54,7 +53,7 @@
 
 
     .text-convertion{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Delius Unicase', cursive;
         grid-column: 1/3;
         font-size: 20px;
         font-weight: bolder;
@@ -69,7 +68,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .container{
         display: flex;
         flex-direction: column;
