@@ -40,8 +40,6 @@ This app consumes data from the [www.coinapi.io](www.coinapi.io) API or any othe
 
 3. Enjoy tracking cryptocurrency exchange rates with ease!
 
-Video introduction here:
-https://www.loom.com/share/9ca8ff02d03f4ff991105d3e8dab6ce3?sid=37a99bd4-594d-4d2d-b665-f46589ea56d8
 
 ## Contributing
 
