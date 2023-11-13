@@ -1,92 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius&family=Delius+Unicase:wght@400;700&family=Poppins:wght@200&display=swap');
-.container{
+@import url("https://fonts.googleapis.com/css2?family=Delius&family=Delius+Unicase:wght@400;700&family=Poppins:wght@200&display=swap");
+.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:  auto ;
+    grid-template-rows: auto;
     gap: 1rem;
     justify-items: center;
-    font-family: 'Delius Unicase', cursive;
+    font-family: "Delius Unicase", cursive;
 
-    .start-tour{
+    .start-tour {
         width: 200px;
         grid-column: 1/3;
     }
 
-    .error-message{
+    .error-message {
         max-width: 60%;
         text-align: center;
-        color: red;    
-        font-family: 'Poppins', sans-serif;
+        color: red;
+        font-family: "Poppins", sans-serif;
         grid-column: 1/3;
         margin-top: 1rem;
         font-weight: bold;
     }
 
-    .autoComplete{
+    .autoComplete {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: .2rem;
+        gap: 0.2rem;
 
-        label{
-            margin-left: .3rem;
+        label {
+            margin-left: 0.3rem;
             font-size: 17px;
             font-weight: bolder;
         }
     }
 
-    .input-number{
+    .input-number {
         width: 100%;
         max-width: 50%;
         height: 70px;
         font-size: 20px;
-        font-family: 'Delius', cursive;
+        font-family: "Delius", cursive;
         margin-bottom: 1rem;
-    
-        
     }
 
-    .ant-input-number-input{
-        text-align: center!important;
+    .ant-input-number-input {
+        text-align: center !important;
     }
 
-
-
-    .text-convertion{
-        font-family: 'Delius Unicase', cursive;
+    .text-convertion {
+        font-family: "Delius Unicase", cursive;
         grid-column: 1/3;
         font-size: 20px;
         font-weight: bolder;
     }
 
-    .button-refresh{
+    .button-refresh {
         grid-column: 1/3;
         width: 18%;
         justify-self: center;
-        font-family: 'Delius Unicase', cursive;
+        font-family: "Delius Unicase", cursive;
         font-weight: bolder;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-        .autoComplete{
+
+        .autoComplete {
             margin-top: 1rem;
-            gap: .5rem;
-            label{
+            gap: 0.5rem;
+            label {
                 font-size: 13px;
-                
             }
         }
 
-        .button-refresh{
+        .button-refresh {
             width: 50%;
         }
+
+        .text-convertion {
+            text-align: center;
+            font-size: 15px;
+        }
     }
-    
-    
 }
